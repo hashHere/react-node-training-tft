@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+body {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* width: 1024px; */
+  width: 768px;
+}
+
+.details {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(12, 1fr);
+  /* grid-template-columns: 200px 50px 100px 100px; */
+  grid-gap: 10px;
+}
+
+.details-item-name {
+  font-weight: bold;
+  grid-column: 2/5;
+}
+
+.details-item-rating {
+  position: relative;
+  color: #44910e;
+}
+
+.details-item-rating::before {
+  content: "\2605";
+  font-size: 14px;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+}
+
+.details-item-review {
+  grid-column: 6/8;
+}
+
+.details-item-rate {
+  grid-column: 8/10;
+}
+
+.details-item-review,
+.details-item-rate {
+  color: blue;
+}
+
+.add-btn {
+  color: white;
+  /* font-weight: lighter; */
+  background-color: #44910e;
+  box-shadow: 1px 1px 0px black;
+  margin: 15px 0px;
+  padding: 15px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.overview-container {
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+  padding: 2px 15px;
+  /* margin: 0px 15px; */
+}
+
+.overview {
+  border-bottom: 1px solid red;
+  margin-bottom: -3px;
+}
+
+.img-clr-btn-container {
+  display: flex;
+  margin: 15px 0px;
+}
+
+.bike-container {
+  margin: 0 30px;
+  position: relative;
+}
+
+.bike {
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 50%;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
+.bike-gallery {
+  margin: 15px 135px 15px 45px;
+}
+
+.selected {
+  border: 1px solid blue;
+}
